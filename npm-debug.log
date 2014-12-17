@@ -1,0 +1,119 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/hongru/Work/Nodejs/nvm/v0.10.33/bin/node',
+1 verbose cli   '/Users/hongru/Work/Nodejs/nvm/v0.10.33/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /Users/hongru/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/Users/hongru/.npm/fsutil/1.0.0/package.tgz', '.' ]
+11 verbose tarball /Users/hongru/.npm/fsutil/1.0.0/package.tgz
+12 verbose folder .
+13 info prepublish fsutil@1.0.0
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /Users/hongru/.npm/1f1177db-tar.lock
+16 silly lockFile 7214856e-gru-npm-fsutil-1-0-0-package-tgz tar:///Users/hongru/.npm/fsutil/1.0.0/package.tgz
+17 verbose lock tar:///Users/hongru/.npm/fsutil/1.0.0/package.tgz /Users/hongru/.npm/7214856e-gru-npm-fsutil-1-0-0-package-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile 7214856e-gru-npm-fsutil-1-0-0-package-tgz tar:///Users/hongru/.npm/fsutil/1.0.0/package.tgz
+21 silly lockFile 7214856e-gru-npm-fsutil-1-0-0-package-tgz tar:///Users/hongru/.npm/fsutil/1.0.0/package.tgz
+22 silly lockFile fbbce3af--hongru-npm-fsutil-1-0-0-package /Users/hongru/.npm/fsutil/1.0.0/package
+23 verbose lock /Users/hongru/.npm/fsutil/1.0.0/package /Users/hongru/.npm/fbbce3af--hongru-npm-fsutil-1-0-0-package.lock
+24 silly lockFile fbbce3af--hongru-npm-fsutil-1-0-0-package /Users/hongru/.npm/fsutil/1.0.0/package
+25 silly lockFile fbbce3af--hongru-npm-fsutil-1-0-0-package /Users/hongru/.npm/fsutil/1.0.0/package
+26 silly lockFile 3a52ce78- .
+27 silly lockFile 3a52ce78- .
+28 silly publish { name: 'fsutil',
+28 silly publish   version: '1.0.0',
+28 silly publish   description: 'util funcs of node fileSystem',
+28 silly publish   main: 'index.js',
+28 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+28 silly publish   repository: { type: 'git', url: 'https://github.com/hongru/fsutil.git' },
+28 silly publish   keywords: [ 'fs', 'node' ],
+28 silly publish   readmeFilename: 'README.md',
+28 silly publish   author: { name: 'cenan.chr' },
+28 silly publish   license: 'MIT',
+28 silly publish   bugs: { url: 'https://github.com/hongru/fsutil/issues' },
+28 silly publish   homepage: 'https://github.com/hongru/fsutil',
+28 silly publish   readme: '# fsutil @ 1.0.0\n\nutils of [Nodejs FileSystem](http://nodejs.org/api/fs.html)\n\n## Apis\n\n+ `mkdirSync(path)` 生成多级目录，类似mkdirp\n+ `rmdirSync(path)` 删除多级目录\n+ `getAllFolersAndFiles(path)` 获取指定目录下的所有 目录 和 文件\n+ `getAllFiles(path)` 获取指定路径下的所有文件\n+ `download(dest, url, callback)` 下载一个文件至指定路径\n+ `copyFile(from, to, callback)` 拷贝文件\n+ `getFilesizeInBytes(filepath)` 获取文件size',
+28 silly publish   _id: 'fsutil@1.0.0',
+28 silly publish   _shasum: '603351adb39dbc259ca6eb59d0dfd8e7e5dac38e',
+28 silly publish   _from: '.' }
+29 verbose request where is /fsutil
+30 verbose request registry https://registry.npmjs.org/
+31 verbose request id 42d6bba08ed5b24e
+32 verbose url raw /fsutil
+33 verbose url resolving [ 'https://registry.npmjs.org/', './fsutil' ]
+34 verbose url resolved https://registry.npmjs.org/fsutil
+35 verbose request where is https://registry.npmjs.org/fsutil
+36 info trying registry request attempt 1 at 15:54:43
+37 http PUT https://registry.npmjs.org/fsutil
+38 http 403 https://registry.npmjs.org/fsutil
+39 verbose headers { date: 'Mon, 15 Dec 2014 07:54:44 GMT',
+39 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+39 verbose headers   'content-type': 'application/json',
+39 verbose headers   'cache-control': 'max-age=60',
+39 verbose headers   'content-length': '2816',
+39 verbose headers   'accept-ranges': 'bytes',
+39 verbose headers   via: '1.1 varnish',
+39 verbose headers   'x-served-by': 'cache-ty66-TYO',
+39 verbose headers   'x-cache': 'MISS',
+39 verbose headers   'x-cache-hits': '0',
+39 verbose headers   'x-timer': 'S1418630084.305595,VS0,VE135',
+39 verbose headers   'keep-alive': 'timeout=10, max=50',
+39 verbose headers   connection: 'Keep-Alive' }
+40 error publish Failed PUT 403
+41 error Error: forbidden user: hongru not authorized to modify fsutil
+41 error Changed: description "Synchronous filesystem utilities" -> "util funcs of node fileSystem"
+41 error Changed: dist-tags.latest "0.1.3" -> "1.0.0"
+41 error Added: versions.1.0.0
+41 error Changed: readme "Filesystem Utilities\u000a====================\u000a\u000a*Synchronous* Filesystem utilities for Node.js.\u000a\u000aRequirements\u000a------------\u000a\u000a* [mocha](http://visionmedia.github.com/mocha/) (if you want to run tests)\u000a\u000aAPI\u000a---\u000a\u000a#### rm_rf(path)\u000a\u000aRemove the directory on `path` recursively.\u000a\u000a#### mkdir_p(path)\u000a\u000aCreate a directory and all its parent directories.\u000a\u000a#### cp(src, dest)\u000a\u000aCopy a file content `src` to `dest`.\u000a\u000a#### cp_r(src, dest)\u000a\u000aCopy file contents `src` to `dest` recursively.\u000a\u000a#### ln_s(src, path)\u000a\u000aCreates a symbolic link `path` which points to `src`.\u000a\u000a#### ln_sf(src, path)\u000a\u000aCreates a symbolic link `path` which points to `src`. If `path` already exists, overwrite it.\u000a\u000a### cd(path)\u000a\u000aChange the current working directory.\u000a\u000a### pwd()\u000a\u000aGet the current working directory.\u000a\u000a#### chmod(mode, path)\u000a\u000aChange permission bits on `path`.\u000a\u000a#### chown(uid, gid, path)\u000a\u000aChange the owner of the file or directory on `path`\u000a\u000a#### chown_R(uid, gid, path)\u000a\u000aChange the owner of the file or directory on `path` recursively.\u000a\u000a#### fwrite_p(path, data)\u000a\u000aWrite a file on `path` after create all its parent directories if necessary.\u000a" -> "# fsutil @ 1.0.0\u000a\u000autils of [Nodejs FileSystem](http://nodejs.org/api/fs.html)\u000a\u000a## Apis\u000a\u000a+ `mkdirSync(path)` 生成多级目录，类似mkdirp\u000a+ `rmdirSync(path)` 删除多级目录\u000a+ `getAllFolersAndFiles(path)` 获取指定目录下的所有 目录 和 文件\u000a+ `getAllFiles(path)` 获取指定路径下的所有文件\u000a+ `download(dest, url, callback)` 下载一个文件至指定路径\u000a+ `copyFile(from, to, callback)` 拷贝文件\u000a+ `getFilesizeInBytes(filepath)` 获取文件size"
+41 error Changed: time.modified "2012-09-11T17:04:46.757Z" -> "2014-12-15T07:56:11.522Z"
+41 error Added: time.1.0.0
+41 error Changed: author.name "Yi, EungJun" -> "cenan.chr"
+41 error Changed: repository.url "git://github.com/npcode/node-fsutil.git" -> "https://github.com/hongru/fsutil.git"
+41 error Changed: readmeFilename "" -> "README.md"
+41 error Changed: keywords.1 "fsutil" -> "node"
+41 error Deleted: keywords.2
+41 error Deleted: keywords.3
+41 error Deleted: keywords.4
+41 error Deleted: keywords.5
+41 error Deleted: contributors
+41 error Added: homepage
+41 error Added: bugs
+41 error Added: _attachments: fsutil
+41 error     at RegClient.<anonymous> (/Users/hongru/Work/Nodejs/nvm/v0.10.33/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:308:14)
+41 error     at Request._callback (/Users/hongru/Work/Nodejs/nvm/v0.10.33/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:246:65)
+41 error     at Request.self.callback (/Users/hongru/Work/Nodejs/nvm/v0.10.33/lib/node_modules/npm/node_modules/request/request.js:236:22)
+41 error     at Request.emit (events.js:98:17)
+41 error     at Request.<anonymous> (/Users/hongru/Work/Nodejs/nvm/v0.10.33/lib/node_modules/npm/node_modules/request/request.js:1142:14)
+41 error     at Request.emit (events.js:117:20)
+41 error     at IncomingMessage.<anonymous> (/Users/hongru/Work/Nodejs/nvm/v0.10.33/lib/node_modules/npm/node_modules/request/request.js:1096:12)
+41 error     at IncomingMessage.emit (events.js:117:20)
+41 error     at _stream_readable.js:943:16
+41 error     at process._tickCallback (node.js:419:13)
+42 error If you need help, you may report this *entire* log,
+42 error including the npm and node versions, at:
+42 error     <http://github.com/npm/npm/issues>
+43 error System Darwin 14.0.0
+44 error command "/Users/hongru/Work/Nodejs/nvm/v0.10.33/bin/node" "/Users/hongru/Work/Nodejs/nvm/v0.10.33/bin/npm" "publish"
+45 error cwd /Users/hongru/Work/github/fsutil
+46 error node -v v0.10.33
+47 error npm -v 1.4.28
+48 verbose exit [ 1, true ]
